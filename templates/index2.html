@@ -1,0 +1,816 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Mix | Template</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{% static 'assets_mix/css/bootstrap.min.css' %} " type="text/css">
+    <link rel="stylesheet" href="{% static 'assets_mix/css/font-awesome.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'assets_mix/css/elegant-icons.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'assets_mix/css/jquery-ui.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'assets_mix/css/magnific-popup.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'assets_mix/css/owl.carousel.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'assets_mix/css/slicknav.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'assets_mix/css/style.css' %}" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas__close">+</div>
+        <ul class="offcanvas__widget">
+            <li><span class="icon_search search-switch"></span></li>
+            <li><a href="#"><span class="icon_heart_alt"></span>
+                <div class="tip">2</div>
+            </a></li>
+            <li><a href="#"><span class="icon_bag_alt"></span>
+                <div class="tip">2</div>
+            </a></li>
+        </ul>
+        <div class="offcanvas__logo">
+            <a href="./index.html"><img src="{% static 'assets_mix/img/logo.png' %}" alt=""></a>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+        <div class="offcanvas__auth">
+            <a href="#">Login</a>
+            <a href="#">Registrar</a>
+        </div>
+    </div>
+    <!-- Offcanvas Menu End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-3 col-lg-2">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="{% static 'assets_mix/img/MIX_2.png' %}" alt="" style="max-height: 35px;"></a>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-7">
+                    <nav class="header__menu">
+                        <ul>
+                            <li class="active"><a href="./index.html">Home</a></li>
+                            <li><a href="#">Mulheres</a></li>
+                            <li><a href="#">Homens</a></li>
+                            <li><a href="./shop.html">Shop</a></li>
+                            <li><a href="#">Páginas</a>
+                                <ul class="dropdown">
+                                    <li><a href="./product-details.html">Product Details</a></li>
+                                    <li><a href="./shop-cart.html">Shop Cart</a></li>
+                                    <li><a href="./checkout.html">Checkout</a></li>
+                                    <li><a href="./blog-details.html">Blog Details</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="./blog.html">Blog</a></li>
+                            <li><a href="./contact.html">Contato</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                {% comment %} <div class="col-lg-3">
+                    <div class="header__right">
+                        <div class="header__right__auth">
+                            <a href="#">Login</a>
+                            <a href="#">Registrar</a>
+                        </div>
+                        <ul class="header__right__widget">
+                            <li><span class="icon_search search-switch"></span></li>
+                            <li><a href="#"><span class="icon_heart_alt"></span>
+                                <div class="tip">2</div>
+                            </a></li>
+                            <li><a href="#"><span class="icon_bag_alt"></span>
+                                <div class="tip">2</div>
+                            </a></li>
+                        </ul>
+                    </div>
+                </div> {% endcomment %}
+            </div>
+            <div class="canvas__open">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Categories Section Begin -->
+    <section class="categories">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 p-0">
+                    <div class="categories__item categories__large__item set-bg"
+                    data-setbg="{% static 'assets_mix/img/categories/category-1.jpg' %}">
+                    <div class="categories__text">
+                        <h1>Moda Feminina</h1>
+                        <p style="color: black;">Explore o preshow da moda feminina, onde <br>tendências emergentes e design clássico se<br> unem. Vivencie, em primeira mão, o futuro <br>do estilo e da elegância.</p>
+                        <a href="#">Compre Agora</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 p-0">
+                        <div class="categories__item set-bg" data-setbg="{% static 'assets_mix/img/categories/category-2.jpg' %}">
+                            <div class="categories__text">
+                                <h4>Moda Masculina</h4>
+                                <p>210 itens</p>
+                                <a href="#">Compre Agora</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 p-0">
+                        <div class="categories__item set-bg" data-setbg="{% static 'assets_mix/img/categories/category-3.jpg' %}">
+                            <div class="categories__text">
+                                <h4>Moda Infantil</h4>
+                                <p>120 itens</p>
+                                <a href="#">Compre Agora</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 p-0">
+                        <div class="categories__item set-bg" data-setbg="{% static 'assets_mix/img/categories/category-4.jpg' %}">
+                            <div class="categories__text">
+                                <h4>Cosméticos</h4>
+                                <p>34 itens</p>
+                                <a href="#">Compre Agora</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 p-0">
+                        <div class="categories__item set-bg" data-setbg="{% static 'assets_mix/img/categories/category-5.jpg' %}">
+                            <div class="categories__text">
+                                <h4>Acessórios</h4>
+                                <p>81 itens</p>
+                                <a href="#">Compre Agora</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Categories Section End -->
+
+<!-- Product Section Begin -->
+<section class="product spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4">
+                <div class="section-title">
+                    <h4>Products</h4>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-8">
+                <ul class="filter__controls">
+                    <li class="active" data-filter="*">Todos</li>
+                    <li data-filter=".women">Mulheres</li>
+                    <li data-filter=".men">Homens</li>
+                    <li data-filter=".kid">Crianças</li>
+                    <li data-filter=".accessories">Acessórios</li>
+                    <li data-filter=".cosmetic">Cosméticos</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row property__gallery">
+            <div class="col-lg-3 col-md-4 col-sm-6 mix women">
+                <div class="product__item">
+                    <div class="product__item__pic set-bg" data-setbg="{% static 'assets_mix/img/product/product-1.jpg' %}">
+                        <div class="label new">New</div>
+                        <ul class="product__hover">
+                            <li><a href="img/product/product-1.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                            <li><a href="#"><span class="icon_heart_alt"></span></a></li>
+                            <li><a href="#"><span class="icon_bag_alt"></span></a></li>
+                        </ul>
+                    </div>
+                    <div class="product__item__text">
+                        <h6><a href="#">Blusa Pastel Primavera</a></h6>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="product__price">R$ 499.00</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mix men">
+                <div class="product__item">
+                    <div class="product__item__pic set-bg" data-setbg="{% static 'assets_mix/img/product/product-2.jpg' %}">
+                        <ul class="product__hover">
+                            <li><a href="img/product/product-2.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                            <li><a href="#"><span class="icon_heart_alt"></span></a></li>
+                            <li><a href="#"><span class="icon_bag_alt"></span></a></li>
+                        </ul>
+                    </div>
+                    <div class="product__item__text">
+                        <h6><a href="#">Jaqueta Rosé Vintage</a></h6>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="product__price">R$ 349.00</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mix accessories">
+                <div class="product__item">
+                    <div class="product__item__pic set-bg" data-setbg="{% static 'assets_mix/img/product/product-3.jpg' %}">
+                        <div class="label stockout">SOLD OUT</div>
+                        <ul class="product__hover">
+                            <li><a href="img/product/product-3.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                            <li><a href="#"><span class="icon_heart_alt"></span></a></li>
+                            <li><a href="#"><span class="icon_bag_alt"></span></a></li>
+                        </ul>
+                    </div>
+                    <div class="product__item__text">
+                        <h6><a href="#">T-Shirt Ocre Casual</a></h6>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="product__price">R$ 899.00</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mix cosmetic">
+                <div class="product__item">
+                    <div class="product__item__pic set-bg" data-setbg="{% static 'assets_mix/img/product/product-4.jpg' %}">
+                        <ul class="product__hover">
+                            <li><a href="img/product/product-4.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                            <li><a href="#"><span class="icon_heart_alt"></span></a></li>
+                            <li><a href="#"><span class="icon_bag_alt"></span></a></li>
+                        </ul>
+                    </div>
+                    <div class="product__item__text">
+                        <h6><a href="#">Camisa Listrada Elegante</a></h6>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="product__price">R$ 649.00</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mix kid">
+                <div class="product__item">
+                    <div class="product__item__pic set-bg" data-setbg="{% static 'assets_mix/img/product/product-5.jpg' %}">
+                        <ul class="product__hover">
+                            <li><a href="img/product/product-5.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                            <li><a href="#"><span class="icon_heart_alt"></span></a></li>
+                            <li><a href="#"><span class="icon_bag_alt"></span></a></li>
+                        </ul>
+                    </div>
+                    <div class="product__item__text">
+                        <h6><a href="#">Camisa Amarela Retrô</a></h6>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="product__price">R$ 259.00</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mix women men kid accessories cosmetic">
+                <div class="product__item sale">
+                    <div class="product__item__pic set-bg" data-setbg="{% static 'assets_mix/img/product/product-6.jpg' %}">
+                        <div class="label sale">Sale</div>
+                        <ul class="product__hover">
+                            <li><a href="img/product/product-6.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                            <li><a href="#"><span class="icon_heart_alt"></span></a></li>
+                            <li><a href="#"><span class="icon_bag_alt"></span></a></li>
+                        </ul>
+                    </div>
+                    <div class="product__item__text">
+                        <h6><a href="#">Blusa Floral Delicada</a></h6>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="product__price">R$ 499.00 <span>R$ 599.00</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mix women men kid accessories cosmetic">
+                <div class="product__item">
+                    <div class="product__item__pic set-bg" data-setbg="{% static 'assets_mix/img/product/product-7.jpg' %}">
+                        <ul class="product__hover">
+                            <li><a href="img/product/product-7.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                            <li><a href="#"><span class="icon_heart_alt"></span></a></li>
+                            <li><a href="#"><span class="icon_bag_alt"></span></a></li>
+                        </ul>
+                    </div>
+                    <div class="product__item__text">
+                        <h6><a href="#">Regata Branca Versátil</a></h6>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="product__price">R$ 599.00</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mix women men kid accessories cosmetic">
+                <div class="product__item sale">
+                    <div class="product__item__pic set-bg" data-setbg="{% static 'assets_mix/img/product/product-8.jpg' %}">
+                        <div class="label">Sale</div>
+                        <ul class="product__hover">
+                            <li><a href="img/product/product-8.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                            <li><a href="#"><span class="icon_heart_alt"></span></a></li>
+                            <li><a href="#"><span class="icon_bag_alt"></span></a></li>
+                        </ul>
+                    </div>
+                    <div class="product__item__text">
+                        <h6><a href="#">Jaqueta Estampa Tropical</a></h6>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="product__price">R$ 499.00 <span>R$ 599.00</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Product Section End -->
+
+<!-- Banner Section Begin -->
+<section class="banner set-bg" data-setbg="{% static 'assets_mix/img/banner/banner-1.jpg' %}">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-7 col-lg-8 m-auto">
+                <div class="banner__slider owl-carousel">
+                    <div class="banner__item">
+                        <div class="banner__text">
+                            <span>Coleção Alvorada Urbana</span>
+                            <h1>A Jaqueta Metropolitana</h1>
+                            <a href="#">Compre agora</a>
+                        </div>
+                    </div>
+                    <div class="banner__item">
+                        <div class="banner__text">
+                            <span>Série Jardim Secreto</span>
+                            <h1>O Vestido Flor de Lis</h1>
+                            <a href="#">Compre agora</a>
+                        </div>
+                    </div>
+                    <div class="banner__item">
+                        <div class="banner__text">
+                            <span>Cápsula Horizonte Náutico</span>
+                            <h1>O Sobretudo Oceano</h1>
+                            <a href="#">Compre agora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Banner Section End -->
+
+<!-- Trend Section Begin -->
+<section class="trend spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="trend__content">
+                    <div class="section-title">
+                        <h4>Tendências</h4>
+                    </div>
+                    <div class="trend__item">
+                        <div class="trend__item__pic">
+                            <img src="{% static 'assets_mix/img/trend/ht-1.jpg' %}" alt="">
+                        </div>
+                        <div class="trend__item__text">
+                            <h6>Bolsa Cilíndrica Noir</h6>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="product__price">R$ 4999.00</div>
+                        </div>
+                    </div>
+                    <div class="trend__item">
+                        <div class="trend__item__pic">
+                            <img src="{% static 'assets_mix/img/trend/ht-2.jpg' %}" alt="">
+                        </div>
+                        <div class="trend__item__text">
+                            <h6>Brincos Âmbar Pendentes</h6>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="product__price">R$ 999.00</div>
+                        </div>
+                    </div>
+                    <div class="trend__item">
+                        <div class="trend__item__pic">
+                            <img src="{% static 'assets_mix/img/trend/ht-3.jpg' %}" alt="">
+                        </div>
+                        <div class="trend__item__text">
+                            <h6>T-Shirt Algodão Puro</h6>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="product__price">R$ 599.00</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="trend__content">
+                    <div class="section-title">
+                        <h4>Mais Vendidos</h4>
+                    </div>
+                    <div class="trend__item">
+                        <div class="trend__item__pic">
+                            <img src="{% static 'assets_mix/img/trend/bs-1.jpg' %}" alt="">
+                        </div>
+                        <div class="trend__item__text">
+                            <h6>Calça Jeans Urbana Destroyed</h6>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="product__price">R$ 749.00</div>
+                        </div>
+                    </div>
+                    <div class="trend__item">
+                        <div class="trend__item__pic">
+                            <img src="{% static 'assets_mix/img/trend/bs-2.jpg' %}" alt="">
+                        </div>
+                        <div class="trend__item__text">
+                            <h6>Maleta Estruturada Urbana</h6>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="product__price">R$ 599.00</div>
+                        </div>
+                    </div>
+                    <div class="trend__item">
+                        <div class="trend__item__pic">
+                            <img src="{% static 'assets_mix/img/trend/bs-3.jpg' %}" alt="">
+                        </div>
+                        <div class="trend__item__text">
+                            <h6>Bolsa Esfera Couro</h6>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="product__price">R$ 799.00</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="trend__content">
+                    <div class="section-title">
+                        <h4>Destaques</h4>
+                    </div>
+                    <div class="trend__item">
+                        <div class="trend__item__pic">
+                            <img src="{% static 'assets_mix/img/trend/f-1.jpg' %}" alt="">
+                        </div>
+                        <div class="trend__item__text">
+                            <h6>Saia Envelope Aquamarine</h6>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="product__price">R$ 299.00</div>
+                        </div>
+                    </div>
+                    <div class="trend__item">
+                        <div class="trend__item__pic">
+                            <img src="{% static 'assets_mix/img/trend/f-2.jpg' %}" alt="">
+                        </div>
+                        <div class="trend__item__text">
+                            <h6>Brincos Lustrados Prisma</h6>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="product__price">R$ 199.00</div>
+                        </div>
+                    </div>
+                    <div class="trend__item">
+                        <div class="trend__item__pic">
+                            <img src="{% static 'assets_mix/img/trend/f-3.jpg' %}" alt="">
+                        </div>
+                        <div class="trend__item__text">
+                            <h6>Carteira Amarela Sobre</h6>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="product__price">R$ 249.00</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Trend Section End -->
+
+<!-- Discount Section Begin -->
+<section class="discount">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 p-0">
+                <div class="discount__pic">
+                    <img src="{% static 'assets_mix/img/discount.jpg' %}" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6 p-0">
+                <div class="discount__text">
+                    <div class="discount__text__title">
+                        <span>Promoção</span>
+                        <h2>Summer 2024</h2>
+                        <h5><span>Descontos de</span> 50%</h5>
+                    </div>
+                    <div class="discount__countdown" id="countdown-time">
+                        <div class="countdown__item">
+                            <span>22</span>
+                            <p>Dias</p>
+                        </div>
+                        <div class="countdown__item">
+                            <span>18</span>
+                            <p>Hour</p>
+                        </div>
+                        <div class="countdown__item">
+                            <span>46</span>
+                            <p>Min</p>
+                        </div>
+                        <div class="countdown__item">
+                            <span>05</span>
+                            <p>Sec</p>
+                        </div>
+                    </div>
+                    <a href="#">Compre Agora</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Discount Section End -->
+
+<!-- Services Section Begin -->
+<section class="services spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="services__item">
+                    <i class="fa fa-car"></i>
+                    <h6>Frete Grátis</h6>
+                    <p>Para todas as compras acima de R$ 99.00</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="services__item">
+                    <i class="fa fa-money"></i>
+                    <h6>Garantia de devolução de dinheiro</h6>
+                    <p>Caso tenha problemas com o produto</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="services__item">
+                    <i class="fa fa-support"></i>
+                    <h6>Suporte Online 24/7</h6>
+                    <p>Suporte dedicado</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="services__item">
+                    <i class="fa fa-headphones"></i>
+                    <h6>Pagamento Seguro</h6>
+                    <p>100% de segurança</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Services Section End -->
+
+<!-- Instagram Begin -->
+<div class="instagram">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-2 col-md-4 col-sm-4 p-0">
+                <div class="instagram__item set-bg" data-setbg="{% static 'assets_mix/img/instagram/insta-1.jpg' %}">
+                    <div class="instagram__text">
+                        <i class="fa fa-instagram"></i>
+                        <a href="#">@ mix_preshow</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-4 p-0">
+                <div class="instagram__item set-bg" data-setbg="{% static 'assets_mix/img/instagram/insta-2.jpg' %}">
+                    <div class="instagram__text">
+                        <i class="fa fa-instagram"></i>
+                        <a href="#">@ mix_preshow</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-4 p-0">
+                <div class="instagram__item set-bg" data-setbg="{% static 'assets_mix/img/instagram/insta-3.jpg' %}">
+                    <div class="instagram__text">
+                        <i class="fa fa-instagram"></i>
+                        <a href="#">@ mix_preshow</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-4 p-0">
+                <div class="instagram__item set-bg" data-setbg="{% static 'assets_mix/img/instagram/insta-4.jpg' %}">
+                    <div class="instagram__text">
+                        <i class="fa fa-instagram"></i>
+                        <a href="#">@ mix_preshow</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-4 p-0">
+                <div class="instagram__item set-bg" data-setbg="{% static 'assets_mix/img/instagram/insta-5.jpg' %}">
+                    <div class="instagram__text">
+                        <i class="fa fa-instagram"></i>
+                        <a href="#">@ mix_preshow</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-4 p-0">
+                <div class="instagram__item set-bg" data-setbg="{% static 'assets_mix/img/instagram/insta-6.jpg' %}">
+                    <div class="instagram__text">
+                        <i class="fa fa-instagram"></i>
+                        <a href="#">@ mix_preshow</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Instagram End -->
+
+<!-- Footer Section Begin -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-7">
+                <div class="footer__about">
+                    <div class="footer__logo">
+                        <a href="./index.html"><img src="img/logo.png' %}" alt=""></a>
+                    </div>
+                    <p>Aceitamos todos os cartões nacionais.</p>
+                    <div class="footer__payment">
+                        <a href="#"><img src="{% static 'assets_mix/img/payment/payment-1.png' %}" alt=""></a>
+                        <a href="#"><img src="{% static 'assets_mix/img/payment/payment-2.png' %}" alt=""></a>
+                        <a href="#"><img src="{% static 'assets_mix/img/payment/payment-3.png' %}" alt=""></a>
+                        <a href="#"><img src="{% static 'assets_mix/img/payment/payment-4.png' %}" alt=""></a>
+                        <a href="#"><img src="{% static 'assets_mix/img/payment/payment-5.png' %}" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-5">
+                <div class="footer__widget">
+                    <h6>Links</h6>
+                    <ul>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            {% comment %} <div class="col-lg-2 col-md-3 col-sm-4">
+                <div class="footer__widget">
+                    <h6>Conta</h6>
+                    <ul>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Orders Tracking</a></li>
+                        <li><a href="#">Checkout</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                    </ul>
+                </div>
+            </div> {% endcomment %}
+            <div class="col-lg-4 col-md-8 col-sm-8">
+                <div class="footer__newslatter">
+                    <h6>Receba nossos<br> produtos por e-mail</h6>
+                    <form action="#">
+                        <input type="text" placeholder="Email">
+                        <button type="submit" class="site-btn">Increver-se</button>
+                    </form>
+                    <div class="footer__social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-youtube-play"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                <div class="footer__copyright__text">
+                    <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> Todos os direitos reservados | Criado por  @axs_consultoria</p>
+                </div>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer Section End -->
+
+<!-- Search Begin -->
+<div class="search-model">
+    <div class="h-100 d-flex align-items-center justify-content-center">
+        <div class="search-close-switch">+</div>
+        <form class="search-model-form">
+            <input type="text" id="search-input" placeholder="Search here.....">
+        </form>
+    </div>
+</div>
+<!-- Search End -->
+
+<!-- Js Plugins -->
+<script src="{% static 'assets_mix/js/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'assets_mix/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'assets_mix/js/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'assets_mix/js/jquery-ui.min.js' %}"></script>
+<script src="{% static 'assets_mix/js/mixitup.min.js' %}"></script>
+<script src="{% static 'assets_mix/js/jquery.countdown.min.js' %}"></script>
+<script src="{% static 'assets_mix/js/jquery.slicknav.js' %}"></script>
+<script src="{% static 'assets_mix/js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'assets_mix/js/jquery.nicescroll.min.js' %}"></script>
+<script src="{% static 'assets_mix/js/main.js' %}"></script>
+</body>
+
+</html>
