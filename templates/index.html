@@ -39,7 +39,7 @@
 
       {% comment %} <h1><a href="index.html" style="color: #f5f823;">Alex Sobreira</a></h1> {% endcomment %}
       <!-- Uncomment below if you prefer to use an image logo -->
-      <a href="index.html" class="mr-auto"><img src="{% static 'assets_axs/img/logo.png' %}" alt="" class="img-fluid" ></a>
+      <a href="{% url 'index' %}" class="mr-auto"><img src="{% static 'assets_axs/img/logo.png' %}" alt="" class="img-fluid" ></a>
       <h2><span>Um maestro</span> da análise de dados e programação na América Latina</h2>
 
       <nav id="navbar" class="navbar">
@@ -48,7 +48,7 @@
           <li><a class="nav-link" href="#about">Sobre</a></li>
           <li><a class="nav-link" href="#resume">Resumo</a></li>
           <li><a class="nav-link" href="#services">Serviços</a></li>
-          <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          {% comment %} <li><a class="nav-link" href="#portfolio">Portfolio</a></li> {% endcomment %}
           <li><a class="nav-link" href="#contact">Contato</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -56,9 +56,9 @@
 
       <div class="social-links">
         <a href="https://wa.me/5511916682103" class="whastapp"><i class="bi bi-whatsapp"></i></a>
-        <a href="https://www.tiktok.com/" class="tiktok"><i class="bi bi-tiktok"></i></a>
+        {% comment %} <a href="https://www.tiktok.com/" class="tiktok"><i class="bi bi-tiktok"></i></a> {% endcomment %}
         <a href="https://www.instagram.com/axs_consultoria" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="https://twitter.com/consultoriaaxs" class="twitter"><i class="bi bi-twitter-x"></i></a>
+        {% comment %} <a href="https://twitter.com/consultoriaaxs" class="twitter"><i class="bi bi-twitter-x"></i></a> {% endcomment %}
       </div>
 
     </div>
@@ -97,7 +97,7 @@
               <ul>
                 <li><i class="bi bi-chevron-right"></i> <strong>Idade:</strong> <span>24</span></li>
                 <li><i class="bi bi-chevron-right"></i> <strong>Grau:</strong> <span>Especialista</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>alex.sobreira@axsconsultoria.com</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>alexs.oliveira@axsconsultoria.com</span></li>
                 <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Disponível</span></li>
               </ul>
             </div>
@@ -474,7 +474,7 @@
             <p>
             <ul>
               <li>(11) 91668-2103</li>
-              <li>alex.sobreira@axsconsultoria.com</li>
+              <li>alexs.sobreira@axsconsultoria.com</li>
             </ul>
             </p>
           </div>
@@ -785,9 +785,9 @@
             <h3>Mídias Sociais</h3>
             <div class="social-links">
               <a href="https://wa.me/5511916682103" class="whastapp"><i class="bi bi-whatsapp"></i></a>
-              <a href="https://www.tiktok.com/" class="tiktok"><i class="bi bi-tiktok"></i></a>
+              {% comment %} <a href="https://www.tiktok.com/" class="tiktok"><i class="bi bi-tiktok"></i></a> {% endcomment %}
               <a href="https://www.instagram.com/axs_consultoria" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a href="https://twitter.com/consultoriaaxs" class="twitter"><i class="bi bi-twitter-x"></i></a>
+              {% comment %} <a href="https://twitter.com/consultoriaaxs" class="twitter"><i class="bi bi-twitter-x"></i></a> {% endcomment %}
             </div>
           </div>
         </div>
@@ -796,7 +796,7 @@
           <div class="info-box">
             <i class="bx bx-envelope"></i>
             <h3>Email</h3>
-            <p>alex.sobreira@axsconsultoria.com</p>
+            <p>alexs.oliveira@axsconsultoria.com</p>
           </div>
         </div>
         <div class="col-md-6 mt-4 d-flex align-items-stretch">
@@ -808,7 +808,7 @@
         </div>
       </div>
 
-      <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
+      {% comment %} <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
         <div class="row">
           <div class="col-md-6 form-group">
             <input type="text" name="name" class="form-control" id="name" placeholder="Seu Nome" required>
@@ -829,7 +829,7 @@
           <div class="sent-message">Your message has been sent. Thank you!</div>
         </div>
         <div class="text-center"><button type="submit">Enviar</button></div>
-      </form>
+      </form> {% endcomment %}
 
     </div>
   </section><!-- End Contact Section -->
