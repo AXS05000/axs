@@ -11,7 +11,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="{% static 'assets_axs/img/favicon2.png' %}" rel="icon">
+  <link href="{% static 'assets_axs/img/logo.png' %}" rel="icon">
   <link href="{% static 'assets_axs/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -97,7 +97,7 @@
               <ul>
                 <li><i class="bi bi-chevron-right"></i> <strong>Idade:</strong> <span>24</span></li>
                 <li><i class="bi bi-chevron-right"></i> <strong>Grau:</strong> <span>Especialista</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>alexs.oliveira@axsconsultoria.com</span></li>
+                {% comment %} <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>-</span></li> {% endcomment %}
                 <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Disponível</span></li>
               </ul>
             </div>
@@ -472,8 +472,8 @@
             <p><em>Especialista em Business Intelligence e desenvolvimento de software, com mais de 7 anos de experiência na transformação de dados complexos em soluções estratégicas e operacionais. Habilidoso na criação de dashboards de BI, automação de relatórios em Excel e desenvolvimento de sistemas personalizados que otimizam processos e potencializam a performance empresarial. Experiência comprovada no desenvolvimento de Inteligências Artificiais personalizadas, projetando e implementando sistemas de análise de dados que impulsionam a tomada de decisões e promovem o crescimento dos negócios. Comprometido com a entrega de resultados de alta qualidade, desde a fase de concepção até a implementação final, sempre focando na inovação e na melhoria contínua.</em></p>
 
             <ul>
-              <li>(11) 91668-2103</li>
-              <li>alexs.oliveira@axsconsultoria.com</li>
+              {% comment %} <li>(11) 91668-2103</li> {% endcomment %}
+              {% comment %} <li>-</li> {% endcomment %}
             </ul>
             </p>
           </div>
@@ -688,20 +688,39 @@
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
           <div class="portfolio-wrap">
-            <img src="{% static 'assets_axs/img/portfolio/portfolio-4.jpg' %}" class="img-fluid" alt="">
+            <img src="{% static 'assets_axs/img/portfolio/portfolio-103.png' %}" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>Card 2</h4>
-              <p>Card</p>
+              <h4>Colaboradores de IA</h4>
+              <p>Sistema</p>
               <div class="portfolio-links">
-                <a href="{% static 'assets_axs/img/portfolio/portfolio-4.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-zoom-in"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-dots-horizontal-rounded"></i></a>
+                <a href="{% static 'assets_axs/img/portfolio/portfolio-103.png' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-zoom-in"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Detalhes do Projeto"><i class="bx bx-dots-horizontal-rounded"></i></a>
               </div>
             </div>
           </div>
         </div>
 
+
+
+
+
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="portfolio-wrap">
+            <img src="{% static 'assets_axs/img/portfolio/portfolio-13.png' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Dashboards Fundos Imobiliários</h4>
+              <p>BI</p>
+              <div class="portfolio-links">
+                <a href="{% static 'assets_axs/img/portfolio/portfolio-13.png' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-zoom-in"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Detalhes do Projeto"><i class="bx bx-dots-horizontal-rounded"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+{% comment %} 
         <div class="col-lg-4 col-md-6 portfolio-item filter-web">
           <div class="portfolio-wrap">
             <img src="{% static 'assets_axs/img/portfolio/portfolio-5.jpg' %}" class="img-fluid" alt="">
@@ -715,7 +734,7 @@
             </div>
           </div>
         </div>
-
+        
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
           <div class="portfolio-wrap">
             <img src="{% static 'assets_axs/img/portfolio/portfolio-6.jpg' %}" class="img-fluid" alt="">
@@ -770,7 +789,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> {% endcomment %}
 
       </div>
 
@@ -813,7 +832,7 @@
           <div class="info-box">
             <i class="bx bx-envelope"></i>
             <h3>Email</h3>
-            <p>alexs.oliveira@axsconsultoria.com</p>
+            <p>-</p>
           </div>
         </div>
         <div class="col-md-6 mt-4 d-flex align-items-stretch">
