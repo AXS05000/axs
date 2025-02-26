@@ -10,7 +10,8 @@ handler404 = 'usuarios.views.handler404'
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('usuarios.urls')),    
+    path('', include('usuarios.urls')),
+    path('', include('axs.urls')),       
     
 
 
