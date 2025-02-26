@@ -1,3 +1,7 @@
 from django.contrib import admin
+from .models import (
+    AzureStorageConfig,
+)
 
-# Register your models here.
+admin.site.register(AzureStorageConfig)
+

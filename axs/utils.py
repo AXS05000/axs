@@ -1,18 +1,18 @@
 import os
 import platform
 import subprocess
+from django.core.files.storage import default_storage
 
-# Verifica se está rodando no Windows ou Linux
+# Detecta o sistema operacional
 IS_WINDOWS = platform.system() == "Windows"
 
 if IS_WINDOWS:
     import comtypes.client
-    import pythoncom  # Apenas para Windows
+    import pythoncom
 
 def convert_docx_to_pdf(input_path, output_path):
     """
-    Converte um arquivo DOCX para PDF. 
-    Usa Microsoft Word no Windows e LibreOffice no Linux.
+    Converte um arquivo DOCX para PDF e salva no Azure Storage (media2).
     """
     try:
         if IS_WINDOWS:
